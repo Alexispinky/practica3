@@ -12,12 +12,15 @@ class ViewControllerD: UIViewController {
     @IBOutlet weak var Image: UIImageView!
     @IBOutlet weak var Ingredients: UITextView!
     @IBOutlet weak var Instructions: UITextView!
+    @IBOutlet weak var scroll: UIScrollView!
     
     var bebida = [String:Any]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        Ingredients.isEditable = false
+        Instructions.isEditable = false
+        
         // Do any additional setup after loading the view.
     }
     
@@ -28,6 +31,11 @@ class ViewControllerD: UIViewController {
         Instructions.text = bebida["directions"] as? String
         Image.image = UIImage(named: bebida["image"] as? String ?? "")
     }
+    
+    /*override func viewWillLayoutSubviews() {
+        scroll.contentLayoutGuide.widthAnchor.constraint(equalTo: scroll.frameLayoutGuide.widthAnchor, constant: 0).isActive = true
+        scroll.contentLayoutGuide.heightAnchor.constraint(equalTo:scroll.frameLayoutGuide.heightAnchor, constant: 20).isActive = true
+    }*/
 
     /*
     // MARK: - Navigation

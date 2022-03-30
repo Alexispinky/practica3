@@ -54,12 +54,15 @@
                                         <rect key="frame" x="8" y="39" width="122" height="340"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="122" id="3Pd-YV-R8C"/>
+                                            <constraint firstAttribute="height" constant="340" id="6aW-7f-2Ux"/>
                                         </constraints>
                                     </imageView>
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="cI8-3u-bOA">
                                         <rect key="frame" x="8" y="398" width="358" height="338"/>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                        <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="338" id="Myy-4d-5Hz"/>
+                                        </constraints>
                                         <color key="textColor" systemColor="labelColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -70,7 +73,6 @@
                                         <constraints>
                                             <constraint firstAttribute="height" constant="221" id="B1y-HJ-Kcb"/>
                                         </constraints>
-                                        <mutableString key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</mutableString>
                                         <color key="textColor" systemColor="labelColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -95,7 +97,6 @@
                                     <constraint firstItem="s4R-dE-UsC" firstAttribute="top" secondItem="89d-7S-3W0" secondAttribute="top" constant="90" id="dZ4-59-IFw"/>
                                     <constraint firstItem="cI8-3u-bOA" firstAttribute="leading" secondItem="89d-7S-3W0" secondAttribute="leading" constant="8" id="pk8-hj-aI4"/>
                                     <constraint firstItem="89d-7S-3W0" firstAttribute="trailing" secondItem="cI8-3u-bOA" secondAttribute="trailing" constant="8" id="vsa-Hd-nVB"/>
-                                    <constraint firstItem="89d-7S-3W0" firstAttribute="bottom" secondItem="cI8-3u-bOA" secondAttribute="bottom" constant="8" id="zc7-eC-f1g"/>
                                 </constraints>
                                 <viewLayoutGuide key="contentLayoutGuide" id="G4H-bT-VP4"/>
                                 <viewLayoutGuide key="frameLayoutGuide" id="89d-7S-3W0"/>
@@ -115,6 +116,7 @@
                         <outlet property="Ingredients" destination="Wwn-Q5-Kzl" id="W3P-ol-KiA"/>
                         <outlet property="Instructions" destination="cI8-3u-bOA" id="q7T-G8-5D8"/>
                         <outlet property="Name" destination="s4R-dE-UsC" id="Qyq-n2-jN2"/>
+                        <outlet property="scroll" destination="jsJ-bE-Vcb" id="Pzh-SC-jHH"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="075-iP-Gu7" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
